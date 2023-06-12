@@ -1,0 +1,177 @@
+.container {
+    width: 100%;
+}
+
+.loginConteudo {
+    border: 2px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 153, 255, 0.226);
+    backdrop-filter: blur(20px);
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.animationOpacity {
+    animation: close .3s linear forwards;
+
+}
+
+@keyframes close {
+    to {
+        opacity: 1;
+    }
+
+    from {
+        opacity: 0;
+    }
+}
+
+.loginConteudo .iconX {
+    margin-left: auto;
+    background-color: rgba(10, 10, 10, 0.793);
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border-bottom-left-radius: 19px;
+    border-top-right-radius: 10px;
+}
+
+.loginConteudo .iconX:hover {
+    background-color: rgba(10, 10, 10, 0.864);
+}
+
+form {
+    margin-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+
+}
+
+form #email,
+#password {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(10, 10, 10, 0.878);
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.email {
+    position: absolute;
+    top: 5.5em;
+    right: 30px;
+    font-size: 20px;
+}
+
+.lock {
+    position: absolute;
+    top: 8.8em;
+    right: 30px;
+    font-size: 20px;
+}
+
+
+form #password {
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-right: auto;
+}
+
+
+.detalhesLogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.detalhesLogin a {
+    color: rgba(10, 10, 10, 0.878);
+    text-decoration: none;
+}
+
+.detalhesLogin a:hover {
+    text-decoration: underline;
+}
+
+
+form button {
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    color: white;
+    font-weight: 500;
+    background-color: rgba(10, 10, 10, 0.878);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form button:hover {
+    background-color: rgb(10, 10, 10);
+}
+
+form .register a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form .register a:hover {
+    text-decoration: underline;
+}
+
+
+
+.erroLogin {
+    position: fixed;
+    text-align: center;
+    height: 30px;
+    width: 350px;
+    border-radius: 6px;
+    color: rgb(233, 0, 0);
+    right: 0px;
+    top: 90px;
+    font-family: 500;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+    animation: move .3s linear forwards;
+    display: none;
+}
+
+@keyframes move {
+    from {
+        top: -150px;
+
+    }
+
+    to {
+        top: 95%;
+
+    }
+}
