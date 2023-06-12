@@ -1,6 +1,6 @@
 # nova-tela-de-login
 
-<b> Este repositório contém o código-fonte do front-end de uma tela de login responsiva e moderna. Com um design atraente e funcionalidades amigáveis, esta tela de login é adequada para diversos projetos web <b>
+<b> Este e um projeto de um front-end de uma tela de login responsiva e moderna. Com um design atraente e funcionalidades amigáveis<b>
 <br><br>
 
 <h1>Tecnologias utilizadas</h1>
